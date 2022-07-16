@@ -99,10 +99,10 @@ jobs:
       - name: Display Python version
         run: python -c "import sys; print(sys.version)"
 
-      - uses: syphar/restore-virtualenv@v1
-        with:
-          requirement_files: pyproject.toml
-
+#      - uses: syphar/restore-virtualenv@v1
+#        with:
+#          requirement_files: pyproject.toml
+#
       - uses: pat-s/always-upload-cache@v2.1.5
         with:
           path: .tmnetdata
