@@ -142,7 +142,7 @@ jobs:
         run: python -m pip list
 
       - name: Run tests
-        run: PYTESTOPTIONS="-n 2 -vv --tmnet-noselect" make test
+        run: PYTESTOPTIONS="-n 0 -vv --tmnet-noselect" make test
 
       - name: Publish code coverage
         uses: codecov/codecov-action@v3
