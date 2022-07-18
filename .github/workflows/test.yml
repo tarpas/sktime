@@ -106,7 +106,7 @@ jobs:
       - uses: pat-s/always-upload-cache@v2.1.5
         with:
           path: .tmnetdata
-          key: testmon=${{ matrix.python-version }}-${{ github.run_id }}.${{ github.run_number }}
+          key: testmon-${{ matrix.python-version }}-${{ github.run_id }}.${{ github.run_number }}
           restore-keys: testmon=${{ matrix.python-version }}
 
       - name: Install sktime and dependencies
