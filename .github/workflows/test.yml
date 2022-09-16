@@ -142,7 +142,7 @@ jobs:
         run: python -m pip list
 
       - name: Run tests
-        run: PYTESTOPTIONS="-vv" make test
+        run: PYTESTOPTIONS="-vv --testmon" make test
 
       - name: Publish code coverage
         uses: codecov/codecov-action@v3
