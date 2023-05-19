@@ -108,6 +108,7 @@ def test_single_dataset_single_strategy_against_sklearn(
 ):
     """Test against sklearn."""
     # set up orchestration
+    pass
     task = TSCTask(target="class_val")
 
     # create strategies
